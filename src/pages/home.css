@@ -1,0 +1,252 @@
+.homeHero {
+    padding-top: 100px;
+    padding-left: 50px;
+    display: flex;
+    
+}
+
+.homeHero .profileDetails {
+    width: 50%;
+}
+
+.homeHero .nameDetails {
+    width: 50%;
+    padding-top: 70px;
+    padding-left: 50px;
+}
+
+.homeHero .nameDetails .avalibleBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 250px;
+    padding:10px 5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    
+    box-shadow: 0 0 8px var(--primary-color-2);
+}
+
+.homeHero .nameDetails .avalibleBox .greenDot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: rgb(52, 211, 153);
+    box-shadow: 0 0 5px rgb(52, 211, 153);
+}
+.homeHero .nameDetails .details h2{
+    padding-top: 20px;
+}
+.homeHero .nameDetails .details h1{
+    padding-top: 5px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.homeHero .nameDetails .details .animationText{
+    padding-top: 5px;
+}
+
+.homeHero .nameDetails .details  p{
+    padding-top: 30px;
+}
+.homeHero .nameDetails .details .typingCursor{
+    animation: myanimation2 0.7s ease-in infinite;
+
+}
+@keyframes myanimation2 {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.homeHero .links{
+    padding-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+.homeHero .links .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding:10px 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    animation: myanimation1 2s ease-in-out infinite;
+    cursor: pointer;
+
+}
+@keyframes myanimation1 {
+    0% {
+        box-shadow: 0 0 8px var(--primary-color-2);
+    }
+
+    50% {
+        box-shadow: 0 0 15px var(--primary-color-2);
+    }
+
+    100% {
+        box-shadow: 0 0 8px var(--primary-color-2);
+    }
+}
+.homeHero .links .link h4{
+    font-weight: 500;
+}
+.homeHero .links .textIcon {
+    display: inline-block;
+    font-size: 11px;
+    animation: myanimation 1s ease-in-out infinite;
+}
+@keyframes myanimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.profileDetails{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.profileDetails .profile{
+    width: 60%;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(15px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        0 0 20px rgba(139, 92, 246, 0.08);
+    animation: profileAnimation 3s ease infinite ;
+    
+}
+.profileDetails .profile .profile-1{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.profileDetails .profile .profile-1 .profileImgDiv{
+    width: 35%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.profileDetails .profile .profile-1 .profileImgDiv img{
+    width: 100%;
+
+}
+.profileDetails .profile .profile-1 .profileNameDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+}
+.profileDetails .profile .profile-1 .profileNameDiv .profileAvalible{
+    padding: 10px;
+    margin-bottom: 12px;
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.profileDetails .profile .profile-1 .profileNameDiv .profileAvalible .dot{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgb(52, 211, 153);
+    box-shadow: 0 0 5px rgb(52, 211, 153);
+}
+.profileDetails .profile .profile-1 .profileNameDiv p{
+    font-size: small;
+}
+.profileDetails .profile .profile-2{
+    background: black;
+    border-radius: 10px;
+}
+.profileDetails .profile .profile-2 .dotsDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.profileDetails .profile .profile-2 .dotsDiv .dots2{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.green{
+    background: green;
+}
+.yellow{
+    background: yellow;
+}
+.red{
+    background: red;
+}
+.profile-2 .line{
+    opacity: 50%;
+}
+.profileDetails .profile .profile-2 .codeDiv{
+    padding: 10px 20px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+
+    letter-spacing: -0.3px;
+
+}
+.profileDetails .profile .profile-2 .codeDiv .codeLine {
+    padding-left: 15px;
+}
+.purple {
+    color: #c084fc;
+}
+
+.blue {
+    color: #60a5fa;
+}
+
+.cyan {
+    color: #22d3ee;
+}
+
+.white {
+    color: #e2e8f0;
+}
+@keyframes profileAnimation {
+    0%{
+        transform: translateY(-0px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(-0px);
+    }
+}
