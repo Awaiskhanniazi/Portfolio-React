@@ -68,7 +68,7 @@ function NavBar() {
                         </NavLink>
                     </div>
                     <div onClick={() => {
-                        window.open("https://www.linkedin.com/in/awais-khan-9ba71b374", "_blank")
+                        window.open("https://github.com/Awaiskhanniazi/Portfolio-React", "_blank")
                     }} className="linkedin">
                         <CgGitFork className='gitIcon' />
                         <FaStar />
