@@ -16,7 +16,7 @@
 
 .navColor {
     background: rgba(62, 53, 77, 0.5);
-    backdrop-filter: blur(10px) saturate(110%);
+    backdrop-filter: blur(20px) saturate(110%);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -146,6 +146,18 @@
 }
 
 @media (max-width: 800px) {
+    .navbar .navLinks .linksDiv svg {
+        font-size: large;
+
+    }
+
+    .navbar .navLinks .linksDiv h3 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+
+    }
+
     .navbar .left {
         width: 20%;
     }
@@ -181,6 +193,7 @@
     .navbar .right {
         display: none;
     }
+
     .navbar .right.open {
         width: 100%;
         display: flex;
@@ -207,10 +220,10 @@
     .navbar.open {
         height: auto;
         flex-direction: column;
-        
+
     }
 }
 
-.gitIcon{
+.gitIcon {
     font-size: larger;
 }

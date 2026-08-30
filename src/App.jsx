@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import NavBar from './components/navBar';
+
+
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Stars from './components/stars';

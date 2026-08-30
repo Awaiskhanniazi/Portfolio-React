@@ -1,0 +1,234 @@
+.footerMain {
+    border-top: 1px solid rgba(151, 164, 185, 0.5);
+    background: var(--background-color);
+    width: 100%;
+    padding: 30px 50px;
+    margin-top: 40px;
+}
+
+.footerMain .footer1 {
+    display: flex;
+    width: 100%;
+}
+
+.footerMain .footer1 .section1 {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.footerMain .footer1 .section1 .image {
+    width: 40%;
+}
+
+.footerMain .footer1 .section1 .image img {
+    width: 50%;
+}
+
+.footerMain .footer1 .section1 p {
+    font-size: small;
+    color: rgb(151, 164, 185);
+}
+
+.footerMain .footer1 .section1 .socialMediaLinkDiv {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.footerMain .footer1 .section1 .socialMediaLink {
+    padding: 8px;
+    border: 1px solid rgb(151, 164, 185);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(151, 164, 185);
+}
+
+.footerMain .footer1 .section1 .socialMediaLink:hover {
+    box-shadow: 0px 0px 5px var(--primary-color-5);
+}
+
+.footerMain .footer1 .section1 .socialMediaLink:hover svg {
+    transform: scale(1.2);
+    color: white;
+    transition: transform 0.5s ease;
+}
+
+.footerMain .footer1 .section2 {
+    width: 20%;
+    margin-top: 20px;
+}
+
+.footerMain .footer1 .section2 h4 {
+    margin-bottom: 15px;
+}
+
+.footerMain .footer1 .section2 .links {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footerMain .footer1 .section2 .footerLinks {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(151, 164, 185);
+    padding-bottom: 10px;
+    font-size: small;
+
+}
+
+.footerMain .footer1 .section2 .footerLinks:hover {
+    color: white;
+}
+
+.footerMain .footer1 .section3 {
+    width: 20%;
+    margin-top: 20px;
+}
+
+.footerMain .footer1 .section3 h4 {
+    margin-bottom: 15px;
+}
+
+.footerMain .footer1 .section3 .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerMain .footer1 .section3 .footerLinks {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(151, 164, 185);
+    padding-bottom: 10px;
+    font-size: small;
+}
+
+.footerMain .footer1 .section3 .footerLinks:hover {
+    color: white;
+}
+
+.footerMain .footer1 .section4 {
+    width: 20%;
+    margin-top: 20px;
+}
+
+.footerMain .footer1 .section4 h4 {
+    margin-bottom: 15px;
+}
+
+.footerMain .footer1 .section4 .links {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footerMain .footer1 .section4 .links .contactLinks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(151, 164, 185);
+    padding-bottom: 10px;
+    font-size: small;
+}
+
+.footerMain .footer1 .section4 .links .contactLinks p {
+    margin: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.footerMain .footer1 .section4 .links .contactLinks:hover {
+    color: white;
+}
+
+.footerMain .footer1 .section4 .links .contactLinks .contactIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerMain .footer2 {
+    margin-top: 20px;
+    border-top: 1px solid rgba(151, 164, 185, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.footerMain .footer2 p {
+    font-size: small;
+    color: rgb(151, 164, 185);
+    padding-top: 20px;
+
+}
+
+@media (max-width:800px) {
+    .footerMain .footer1 {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .footerMain .footer1 .section1 {
+        width: 60%;
+
+    }
+
+    .footerMain .footer1 .section2 {
+        width: 40%;
+
+    }
+
+    .footerMain .footer1 .section3 {
+        width: 60%;
+
+    }
+
+    .footerMain .footer1 .section4 {
+        width: 40%;
+
+    }
+
+}
+
+@media (max-width:450px) {
+    .footerMain {
+        padding: 30px 30px;
+    }
+
+    .footerMain .footer1 .section1 {
+        width: 100%;
+    }
+
+    .footerMain .footer1 .section2 {
+        width: 100%;
+
+    }
+
+    .footerMain .footer1 .section3 {
+        width: 100%;
+
+    }
+
+    .footerMain .footer1 .section4 {
+        width: 100%;
+
+    }
+
+    .footerMain .footer2 {
+
+
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+
+
+    }
+
+
+}

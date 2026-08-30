@@ -4,11 +4,9 @@ import "./navbar.css"
 import { useState, useEffect } from 'react';
 import { MdOutlineHome ,MdMiscellaneousServices} from "react-icons/md";
 import { GoPerson } from "react-icons/go";
-import { FaLaptopCode, FaLinkedinIn } from "react-icons/fa6";
+import { FaLaptopCode } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { GoGitBranch } from "react-icons/go";
-import { RiGitBranchFill } from "react-icons/ri";
 import { CgGitFork } from "react-icons/cg";
 function NavBar() {
     const [navColor, setNavColor] = useState(false);

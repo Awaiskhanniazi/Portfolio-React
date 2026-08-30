@@ -2,7 +2,7 @@
     padding-top: 100px;
     padding-left: 50px;
     display: flex;
-    
+
 }
 
 .homeHero .profileDetails {
@@ -21,11 +21,11 @@
     justify-content: center;
     gap: 10px;
     width: 250px;
-    padding:10px 5px;
+    padding: 10px 5px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    
+
     box-shadow: 0 0 8px var(--primary-color-2);
 }
 
@@ -36,25 +36,30 @@
     background: rgb(52, 211, 153);
     box-shadow: 0 0 5px rgb(52, 211, 153);
 }
-.homeHero .nameDetails .details h2{
+
+.homeHero .nameDetails .details h2 {
     padding-top: 20px;
 }
-.homeHero .nameDetails .details h1{
+
+.homeHero .nameDetails .details h1 {
     padding-top: 5px;
     font-size: 40px;
     font-weight: 600;
 }
-.homeHero .nameDetails .details .animationText{
+
+.homeHero .nameDetails .details .animationText {
     padding-top: 5px;
 }
 
-.homeHero .nameDetails .details  p{
+.homeHero .nameDetails .details p {
     padding-top: 30px;
 }
-.homeHero .nameDetails .details .typingCursor{
+
+.homeHero .nameDetails .details .typingCursor {
     animation: myanimation2 0.7s ease-in infinite;
 
 }
+
 @keyframes myanimation2 {
     0% {
         opacity: 100%;
@@ -69,17 +74,18 @@
     }
 }
 
-.homeHero .links{
+.homeHero .links {
     padding-top: 20px;
     display: flex;
     gap: 15px;
 }
-.homeHero .links .link{
+
+.homeHero .links .link {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding:10px 15px;
+    padding: 10px 15px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -87,6 +93,7 @@
     cursor: pointer;
 
 }
+
 @keyframes myanimation1 {
     0% {
         box-shadow: 0 0 8px var(--primary-color-2);
@@ -100,14 +107,20 @@
         box-shadow: 0 0 8px var(--primary-color-2);
     }
 }
-.homeHero .links .link h4{
+.homeHero .links a{
+    text-decoration: none;
+    color: white;
+}
+.homeHero .links .link h4 {
     font-weight: 500;
 }
+
 .homeHero .links .textIcon {
     display: inline-block;
     font-size: 11px;
     animation: myanimation 1s ease-in-out infinite;
 }
+
 @keyframes myanimation {
     0% {
         transform: scale(1);
@@ -121,7 +134,8 @@
         transform: scale(1);
     }
 }
-.profileDetails{
+
+.profileDetails {
     width: 50%;
     display: flex;
     align-items: center;
@@ -129,7 +143,8 @@
     margin-top: 50px;
 
 }
-.profileDetails .profile{
+
+.profileDetails .profile {
     width: 60%;
     padding: 25px;
     background: rgba(255, 255, 255, 0.06);
@@ -139,54 +154,89 @@
     box-shadow:
         0 8px 32px rgba(0, 0, 0, 0.25),
         0 0 20px rgba(139, 92, 246, 0.08);
-    animation: profileAnimation 3s ease infinite ;
-    
+    animation: profileAnimation 3s ease infinite;
+
 }
-.profileDetails .profile .profile-1{
+
+.profileDetails .profile:hover {
+    animation: profileHoverAnimation 3s ease infinite;
+
+}
+
+@keyframes profileHoverAnimation {
+    0% {
+        box-shadow: 0 0 20px var(--primary-color-2);
+    }
+
+    50% {
+        box-shadow: 0 0 5px var(--primary-color-2);
+    }
+
+    100% {
+        box-shadow: 0 0 20px var(--primary-color-2);
+    }
+}
+
+.profileDetails .profile .profile-1 {
     width: 100%;
     display: flex;
     gap: 20px;
 }
-.profileDetails .profile .profile-1 .profileImgDiv{
+
+.profileDetails .profile .profile-1 .profileImgDiv {
     width: 35%;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    background-image: url(../assets/profile.jpeg);
+
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
     border-radius: 20px;
 }
-.profileDetails .profile .profile-1 .profileImgDiv img{
+
+.profileDetails .profile .profile-1 .profileImgDiv img {
     width: 100%;
 
 }
-.profileDetails .profile .profile-1 .profileNameDiv{
+
+.profileDetails .profile .profile-1 .profileNameDiv {
     display: flex;
+    width: auto;
     flex-direction: column;
     align-items: baseline;
     justify-content: end;
 }
-.profileDetails .profile .profile-1 .profileNameDiv .profileAvalible{
+
+.profileDetails .profile .profile-1 .profileNameDiv .profileAvalible {
     padding: 10px;
     margin-bottom: 12px;
-    width: 50%;
+    width: auto;
     border-radius: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
-.profileDetails .profile .profile-1 .profileNameDiv .profileAvalible .dot{
+
+.profileDetails .profile .profile-1 .profileNameDiv .profileAvalible .dot {
     width: 7px;
     height: 7px;
     border-radius: 50%;
     background: rgb(52, 211, 153);
     box-shadow: 0 0 5px rgb(52, 211, 153);
 }
-.profileDetails .profile .profile-1 .profileNameDiv p{
+
+.profileDetails .profile .profile-1 .profileNameDiv p {
     font-size: small;
 }
-.profileDetails .profile .profile-2{
+
+.profileDetails .profile .profile-2 {
     background: black;
     border-radius: 10px;
 }
-.profileDetails .profile .profile-2 .dotsDiv{
+
+.profileDetails .profile .profile-2 .dotsDiv {
     width: 100%;
     display: flex;
     align-items: center;
@@ -194,25 +244,33 @@
     gap: 8px;
     margin-top: 20px;
     padding: 10px;
+    
+    
 }
-.profileDetails .profile .profile-2 .dotsDiv .dots2{
+
+.profileDetails .profile .profile-2 .dotsDiv .dots2 {
     height: 10px;
     width: 10px;
     border-radius: 50%;
 }
-.green{
+
+.green {
     background: green;
 }
-.yellow{
+
+.yellow {
     background: yellow;
 }
-.red{
+
+.red {
     background: red;
 }
-.profile-2 .line{
+
+.profile-2 .line {
     opacity: 50%;
 }
-.profileDetails .profile .profile-2 .codeDiv{
+
+.profileDetails .profile .profile-2 .codeDiv {
     padding: 10px 20px;
     font-family: "JetBrains Mono", monospace;
     font-size: 14px;
@@ -221,9 +279,11 @@
     letter-spacing: -0.3px;
 
 }
+
 .profileDetails .profile .profile-2 .codeDiv .codeLine {
     padding-left: 15px;
 }
+
 .purple {
     color: #c084fc;
 }
@@ -239,14 +299,224 @@
 .white {
     color: #e2e8f0;
 }
+
+.profileDetails .profile .profile-2 .codeDiv .typingCursor {
+    font-size: larger;
+
+    animation: myanimation2 0.7s ease-in infinite;
+
+}
+
+@keyframes myanimation2 {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
 @keyframes profileAnimation {
-    0%{
+    0% {
         transform: translateY(-0px);
     }
-    50%{
+
+    50% {
         transform: translateY(-5px);
     }
-    100%{
+
+    100% {
         transform: translateY(-0px);
     }
+}
+
+.homeSection2 {
+    margin-top: 180px;
+    width: 100%;
+
+}
+
+.homeSection2 .mainHeading {
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+.homeSection2 .skillsDiv {
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 1070px) {
+    .profileDetails .profile {
+        width: 70%;
+        padding: 25px;
+
+    }
+
+    .homeHero .nameDetails {
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+
+    .profileDetails {
+        margin-top: 40px;
+
+    }
+
+    .homeSection2 {
+        margin-top: 120px;
+
+    }
+
+
+}
+
+
+@media (max-width: 950px) {
+    .profileDetails .profile {
+        width: 80%;
+        padding: 25px;
+
+    }
+
+    .homeHero .nameDetails {
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+
+    .profileDetails {
+        margin-top: 30px;
+
+    }
+
+
+}
+
+
+@media (max-width: 800px) {
+    .homeHero .nameDetails .details h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .profileDetails .profile {
+        width: 90%;
+        padding: 25px;
+
+    }
+
+    .homeHero .nameDetails {
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+
+    .profileDetails {
+        margin-top: 20px;
+
+    }
+
+    .profileDetails .profile {
+        padding: 20px;
+    }
+
+    .homeSection2 {
+        margin-top: 100px;
+
+    }
+}
+
+
+@media (max-width:770px) {
+    .homeHero {
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .homeHero .nameDetails p {
+        width: 70%;
+    }
+
+    .homeHero .profileDetails {
+        width: 100%;
+    }
+
+    .homeHero .nameDetails {
+        width: 100%;
+
+    }
+
+    .profileDetails {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .profileDetails .profile {
+        width: 60%;
+        padding: 25px;
+
+
+    }
+
+}
+
+@media (max-width:500px) {
+    .homeHero {
+        padding-left: 20px;
+
+    }
+
+    .homeHero .nameDetails p {
+        width: 80%;
+    }
+
+    .homeHero .links {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .homeHero .links .link {
+        width: 70%;
+    }
+
+    .homeHero .nameDetails {
+        padding-left: 15px;
+    }
+
+    .profileDetails .profile {
+        width: 90%;
+    }
+
+    .homeHero {
+        padding-left: 10px;
+
+    }
+
+    .profileDetails {
+        margin-top: 60px;
+    }
+
+    .homeSection2 {
+        margin-top: 80px;
+
+    }
+
+
 }

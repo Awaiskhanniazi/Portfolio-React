@@ -1,6 +1,13 @@
 import "./home.css"
 import { useEffect, useState } from "react";
-import profileImage from "../assets/profile.jpeg"
+
+import { FaReact, FaNode,FaGitAlt} from "react-icons/fa";
+import { SiExpress,SiMysql,SiPrisma } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
+import { TbApi } from "react-icons/tb";
+import Skill from "../components/skill";
+import { NavLink } from "react-router-dom";
+
 function Home() {
     const texts = [
         "Full Stack Developer",
@@ -40,7 +47,7 @@ function Home() {
 
             }
 
-        }, deleting ? 50 : 180);
+        }, deleting ? 50 : 210);
 
         return () => clearTimeout(timer);
 
@@ -62,21 +69,24 @@ function Home() {
                         <p>IT student passionate about building modern, scalable and user-friendly digital solutions.</p>
                     </div>
                     <div className="links">
+                        <NavLink to="/projects">
                         <div className="link">
                             <h4 className="textIcon">🔥</h4>
                             <h4>Check my <span className="purpleText">Projects</span></h4>
                         </div>
+                        </NavLink>
+                        <a href="/Resume.pdf" download>
                         <div className="link">
                             <h4 className="textIcon">🎓</h4>
                             <h4>Download my <span className="purpleText">Resume</span></h4>
                         </div>
+                        </a>
                     </div>
                 </div>
                 <div className="profileDetails">
                     <div className="profile">
                         <div className="profile-1">
                             <div className="profileImgDiv">
-                                <img src={profileImage} alt="" />
 
                             </div>
                             <div className="profileNameDiv">
@@ -94,7 +104,7 @@ function Home() {
                                 <div className="dots2 yellow"></div>
                                 <div className="dots2 red"></div>
                             </div>
-                            <hr className="line"/>
+                            <hr className="line" />
                             <div className="codeDiv">
                                 <div>
                                     <span className="purple">const</span>
@@ -125,12 +135,32 @@ function Home() {
 
                                 <div>
                                     <span className="white">&#125;;</span>
+                                    <span className="typingCursor purpleText">|</span>
                                 </div>
 
 
                             </div>
                         </div>
                     </div>
+
+                </div>
+
+
+            </div>
+            <div className="homeSection2">
+                <div className="mainHeading">
+                    <h1>  My Profectional <span className="purpleText">Skills Set</span></h1>
+                </div>
+                <div className="skillsDiv">
+                    <Skill icon={<IoLogoJavascript />} text={"Java Script"} />
+                    <Skill icon={<FaReact />} text={"React JS"} />
+                    <Skill icon={< FaNode />} text={"Node JS"} />
+                    <Skill icon={< SiExpress />} text={"Express JS"} />
+                    <Skill icon={< TbApi />} text={"Rest API"} />
+                    <Skill icon={< SiMysql />} text={"My SQl"} />
+                    <Skill icon={< SiPrisma />} text={"Prisma"} />
+                    <Skill icon={< FaGitAlt />} text={"Git Git Hub"} />
+
 
                 </div>
             </div>
