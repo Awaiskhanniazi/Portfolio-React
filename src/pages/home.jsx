@@ -159,7 +159,7 @@ function Home() {
                     <Skill icon={< TbApi />} text={"Rest API"} />
                     <Skill icon={< SiMysql />} text={"My SQl"} />
                     <Skill icon={< SiPrisma />} text={"Prisma"} />
-                    <Skill icon={< FaGitAlt />} text={"Git Git Hub"} />
+                    <Skill icon={< FaGitAlt />} text={"Git GitHub"} />
 
 
                 </div>
