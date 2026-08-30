@@ -484,16 +484,17 @@
     }
 
     .homeHero .links {
+        width: 100%;
         padding-top: 20px;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
+        justify-content: start;
         flex-direction: column;
         gap: 20px;
     }
 
     .homeHero .links .link {
-        width: 70%;
+        width: 100%;
     }
 
     .homeHero .nameDetails {
