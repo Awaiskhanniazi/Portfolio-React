@@ -1,0 +1,200 @@
+.aboutMain {
+    padding-top: 100px;
+    padding-left: 50px;
+    width: 100%;
+
+}
+
+.aboutMain .part1 {
+    width: 100%;
+    display: flex;
+}
+
+.aboutMain .part1 .aboutMain1 {
+    width: 50%;
+    padding: 20px;
+}
+
+.aboutMain .part1 .aboutMain2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMain .part1 .aboutMain2 img {
+    width: 50%;
+}
+
+.aboutMain .part1 .aboutMain1 .aboutbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 30%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow: 0 0 8px var(--primary-color-2);
+}
+
+.aboutMain .part1 .aboutMain1 .aboutbox .greenDot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: rgb(52, 211, 153);
+    box-shadow: 0 0 5px rgb(52, 211, 153);
+}
+
+.aboutMain .part1 .aboutMain1 h1 {
+    padding-top: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.aboutMain .part1 .aboutMain1 h5 {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.aboutMain .part1 .aboutMain1 .hobbyText {
+    margin-top: 10px;
+}
+
+.aboutMain .part1 .aboutMain1 .hobbiesDiv {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.aboutMain .part1 .aboutMain1 .hobbiesDiv .hobby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    cursor: pointer;
+}
+
+.aboutMain .part1 .aboutMain1 .hobbiesDiv .hobby .hobbyIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMain .part1 .aboutMain1 .hobbiesDiv .hobby:hover {
+    box-shadow: 0px 0px 8px var(--primary-color-2);
+    transition: box-shadow 0.5s ease;
+
+
+}
+
+.aboutMain .part1 .aboutMain1 .hobbiesDiv .hobby:hover .hobbyIcon {
+    color: var(--primary-color);
+    transform: scale(1.2);
+    transition: color 0.5s ease,
+        transform 0.5s ease;
+
+}
+
+.aboutMain .part2{
+    margin-top: 30px;
+    text-align: center;
+}
+.aboutMain .part2 .qouteText{
+    font-weight: 200;
+}
+
+@media (max-width:1260px) {
+    .aboutMain .part1 .aboutMain1 .aboutbox {
+        width: 35%;
+
+    }
+}
+
+@media (max-width:1110px) {
+    .aboutMain .part1 .aboutMain1 .aboutbox {
+        width: 40%;
+
+    }
+
+    .aboutMain .part1 .aboutMain2 img {
+        width: 60%;
+    }
+
+    .aboutMain .part1 .aboutMain1 .hobbiesDiv {
+        flex-wrap: wrap;
+
+    }
+
+
+}
+
+@media (max-width:1000px) {
+    .aboutMain .part1 .aboutMain1 .aboutbox {
+        width: 45%;
+
+    }
+}
+
+@media (max-width:890px) {
+    .aboutMain .part1 .aboutMain1 .aboutbox {
+        width: 50%;
+
+    }
+
+    .aboutMain .part1 .aboutMain2 img {
+        width: 70%;
+    }
+
+    .aboutMain .part1 .aboutMain1 {
+        padding: 0px;
+    }
+}
+@media (max-width:780px) {
+    .aboutMain .part1 .aboutMain1 .aboutbox {
+        width: 55%;
+
+    }
+    
+}
+
+@media (max-width:650px) {
+    .aboutMain .part1 .aboutMain1 .aboutbox {
+        width: 62%;
+
+    }
+    .aboutMain {
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 10px;
+
+    }
+
+    .aboutMain .part1 {
+        flex-direction: column;
+    }
+
+    .aboutMain .part1 .aboutMain1 {
+        width: 100%;
+
+    }
+
+    .aboutMain .part1 .aboutMain2 {
+        padding-top: 50px;
+        width: 100%;
+
+
+    }
+
+    .aboutMain .part1 .aboutMain2 img {
+        width: 70%;
+    }
+
+}
