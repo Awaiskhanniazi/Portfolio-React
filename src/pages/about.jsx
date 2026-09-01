@@ -62,7 +62,12 @@ function About() {
                     </h4>
                 </div>
                 <div className="part3">
-                    
+                    <div className="animationcard">
+                        <div className="experienceMain">
+                            
+                        </div>
+                    </div>
+
                 </div>
 
             </div>

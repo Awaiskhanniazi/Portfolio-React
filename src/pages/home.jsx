@@ -1,12 +1,14 @@
 import "./home.css"
 import { useEffect, useState } from "react";
 
-import { FaReact, FaNode,FaGitAlt} from "react-icons/fa";
-import { SiExpress,SiMysql,SiPrisma } from "react-icons/si";
+import { FaReact, FaNode, FaGitAlt } from "react-icons/fa";
+import { SiExpress, SiMysql, SiPrisma } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbApi } from "react-icons/tb";
 import Skill from "../components/skill";
 import { NavLink } from "react-router-dom";
+import { CiLocationArrow1 } from "react-icons/ci";
+
 
 function Home() {
     const texts = [
@@ -70,16 +72,16 @@ function Home() {
                     </div>
                     <div className="links">
                         <NavLink to="/projects">
-                        <div className="link">
-                            <h4 className="textIcon">🔥</h4>
-                            <h4>Check my <span className="purpleText">Projects</span></h4>
-                        </div>
+                            <div className="link">
+                                <h4 className="textIcon">🔥</h4>
+                                <h4>Check my <span className="purpleText">Projects</span></h4>
+                            </div>
                         </NavLink>
                         <a href="/Resume.pdf" download>
-                        <div className="link">
-                            <h4 className="textIcon">🎓</h4>
-                            <h4>Download my <span className="purpleText">Resume</span></h4>
-                        </div>
+                            <div className="link">
+                                <h4 className="textIcon">🎓</h4>
+                                <h4>Download my <span className="purpleText">Resume</span></h4>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -160,10 +162,68 @@ function Home() {
                     <Skill icon={< SiMysql />} text={"My SQl"} />
                     <Skill icon={< SiPrisma />} text={"Prisma"} />
                     <Skill icon={< FaGitAlt />} text={"Git GitHub"} />
+                </div>
 
+            </div>
+            <div className="homeSection3">
+                <NavLink to="/about" >
+                    <div className="redirectDiv">
+                        <div className="redirectPart1">
+                            <div className="imgDiv">
+
+                            </div>
+                        </div>
+                        <div className="redirectPart2">
+                            <h3><span className="purpleText">Learn More About Me</span></h3>
+                            <p>Click here to know more about my background, journey and experience</p>
+                        </div>
+                        <div className="redirectPart3">
+                            <div className="arrowDiv">
+                                <CiLocationArrow1 />
+
+                            </div>
+                        </div>
+                    </div>
+                </NavLink>
+            </div>
+            <div className="homeSection4">
+                <div className="mainHeading">
+                    <h1>Offering Profectional <span className="purpleText">Services</span></h1>
+                </div>
+                <div className="animationDiv">
+                    <div className="serviceDiv">
+                        <div className="servicePart1">
+                            <h2><span className="purpleText">Full Stack Web Application</span></h2>
+                            <p>Modern and responsive frontend interfaces for all devices.</p>
+                            <p>Secure and scalable backend systems with efficient database management.</p>
+                            <p>REST API development and seamless third-party API integration.</p>
+                            <p>Custom admin panels for efficient content and user management.</p>
+                            <p>Secure media upload functionality for images, videos, and documents.</p>
+                            <p>Token-based authentication with role-based access control.</p>
+                            <p>Deployment and hosting of production-ready web applications.</p>
+                            <p>Git and GitHub for reliable version control and code management.</p>
+                            <div className="redirectServices">
+                                <div className="redirectButton">
+                                    <h6>
+                                        <span className="purpleText">
+                                            View All Services
+
+                                        </span>
+                                    </h6>
+                                    <div className="arrowDiv">
+                                        <CiLocationArrow1 />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="servicePart2">
+                        </div>
+                    </div>
 
                 </div>
+
             </div>
+
         </>
     )
 }

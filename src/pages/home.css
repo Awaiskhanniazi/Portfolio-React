@@ -107,10 +107,12 @@
         box-shadow: 0 0 8px var(--primary-color-2);
     }
 }
-.homeHero .links a{
+
+.homeHero .links a {
     text-decoration: none;
     color: white;
 }
+
 .homeHero .links .link h4 {
     font-weight: 500;
 }
@@ -244,8 +246,8 @@
     gap: 8px;
     margin-top: 20px;
     padding: 10px;
-    
-    
+
+
 }
 
 .profileDetails .profile .profile-2 .dotsDiv .dots2 {
@@ -357,6 +359,270 @@
     flex-wrap: wrap;
 }
 
+.homeSection3 {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeSection3 a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.homeSection3 .redirectDiv {
+    width: 40%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    cursor: pointer;
+
+}
+
+.homeSection3 .redirectDiv:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 8px var(--primary-color-2);
+    transition: transform 0.5s ease-in,
+        box-shadow 0.5s ease-in;
+}
+
+.homeSection3 .redirectDiv:hover .redirectPart1 .imgDiv {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px var(--primary-color-2);
+    transition: transform 0.5s ease-in,
+        box-shadow 0.5s ease-in;
+}
+
+.homeSection3 .redirectDiv:hover .redirectPart3 .arrowDiv {
+    border: 1px solid rgba(255, 255, 255, 0.292);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px var(--primary-color-2);
+    color: var(--primary-color);
+    transition: transform 0.5s ease,
+        box-shadow 0.5s ease-in,
+        color 0.5s ease-in
+}
+
+.homeSection3 .redirectDiv .redirectPart1 {
+    width: 15%;
+
+}
+
+
+.homeSection3 .redirectDiv .redirectPart1 .imgDiv {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    background-image: url(../assets/profile.jpeg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.homeSection3 .redirectDiv .redirectPart2 {
+    width: 70%;
+}
+
+.homeSection3 .redirectDiv .redirectPart2 p {
+    padding-top: 5px;
+    font-size: small;
+    font-weight: 200;
+}
+
+.homeSection3 .redirectDiv .redirectPart3 {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeSection3 .redirectDiv .redirectPart3 .arrowDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+
+}
+
+.homeSection4 {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.homeSection4 .animationDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: 350px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.homeSection4 .animationDiv::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(transparent 0deg,
+            transparent 200deg,
+            #c45cff 300deg,
+            #ffffff 350deg,
+            transparent 360deg);
+    animation: rotateBorder 3s linear infinite;
+
+}
+
+@keyframes rotateBorder {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.homeSection4 .animationDiv::after {
+    content: "";
+
+    position: absolute;
+    inset: 5px;
+
+    background: var(--background-color);
+    border-radius: 18px;
+}
+
+
+
+.homeSection4 .mainHeading {
+    margin-bottom: 30px;
+}
+
+.homeSection4 .animationDiv .serviceDiv {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    z-index: 1;
+}
+
+
+.homeSection4 .serviceDiv .servicePart1 {
+    position: absolute;
+    padding: 25px;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: var(--background-color);
+    mask-image: linear-gradient(to right,
+            black 0%,
+            black 55%,
+            rgba(0, 0, 0, 0.8) 70%,
+            rgba(0, 0, 0, 0.4) 82%,
+            transparent 100%);
+    -webkit-mask-image: linear-gradient(to right,
+            black 0%,
+            black 55%,
+            rgba(0, 0, 0, 0.8) 70%,
+            rgba(0, 0, 0, 0.4) 82%,
+            transparent 100%);
+
+}
+
+.homeSection4 .serviceDiv .servicePart1 h2 {
+    padding: 15px 0px;
+}
+
+.homeSection4 .serviceDiv .servicePart1 p {
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+.homeSection4 .serviceDiv .servicePart1 .redirectServices {
+    display: flex;
+}
+
+.homeSection4 .serviceDiv .servicePart1 .redirectServices .redirectButton {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    background: white;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.homeSection4 .serviceDiv .servicePart1 .redirectServices .redirectButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 0px 8px var(--primary-color-5);
+    transition: transform 0.5s ease-in,
+        box-shadow 0.5s ease-in;
+}
+
+.homeSection4 .serviceDiv .servicePart1 .redirectServices .arrowDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+.homeSection4 .serviceDiv .servicePart2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url(../assets/fullStackService3.png);
+    background-size: cover;
+    background-position: center;
+    mask-image: linear-gradient(to right,
+            transparent 0%,
+            rgba(0, 0, 0, 0.2) 15%,
+            rgba(0, 0, 0, 0.6) 30%,
+            black 50%);
+    -webkit-mask-image: linear-gradient(to right,
+            transparent 0%,
+            rgba(0, 0, 0, 0.2) 15%,
+            rgba(0, 0, 0, 0.6) 30%,
+            black 50%);
+}
+
+@media (max-width: 1180px) {
+    .homeSection4 .animationDiv {
+        width: 85%;
+
+
+    }
+
+
+}
 
 @media (max-width: 1070px) {
     .profileDetails .profile {
@@ -377,6 +643,17 @@
 
     .homeSection2 {
         margin-top: 120px;
+
+    }
+
+    .homeSection3 .redirectDiv {
+        width: 50%;
+
+    }
+
+    .homeSection4 .animationDiv {
+        width: 90%;
+
 
     }
 
@@ -401,9 +678,36 @@
 
     }
 
+    .homeSection3 .redirectDiv {
+        width: 60%;
+
+    }
+
+    .homeSection4 .animationDiv {
+        width: 95%;
+        height: 390px;
+
+
+    }
+
+    .homeSection4 .animationDiv .serviceDiv {
+        height: 390px;
+    }
+
 
 }
 
+@media (max-width:830px) {
+    .homeSection4 .animationDiv {
+
+        height: 420px;
+    }
+
+    .homeSection4 .animationDiv .serviceDiv {
+        height: 420px;
+    }
+
+}
 
 @media (max-width: 800px) {
     .homeHero .nameDetails .details h1 {
@@ -434,6 +738,25 @@
     .homeSection2 {
         margin-top: 100px;
 
+    }
+
+    .homeSection3 .redirectDiv {
+        width: 65%;
+
+    }
+
+    .homeSection4 .animationDiv {
+
+        height: 350px;
+    }
+
+    .homeSection4 .animationDiv .serviceDiv {
+        height: 350px;
+    }
+
+    .homeSection4 .serviceDiv .servicePart1 p {
+        font-size: small;
+        font-weight: 300;
     }
 }
 
@@ -470,6 +793,74 @@
 
 
     }
+
+    .homeSection3 .redirectDiv {
+        width: 70%;
+
+    }
+
+    .homeSection3 .redirectDiv .redirectPart1 {
+        width: 20%;
+
+    }
+
+
+}
+
+@media (max-width:720px) {
+    .homeSection4 .serviceDiv .servicePart2 {
+        width: 40%;
+
+    }
+
+    .homeSection4 .serviceDiv .servicePart1 {
+        width: 80%;
+    }
+
+
+}
+
+@media (max-width:610px) {
+    .homeSection4 .serviceDiv .servicePart2 {
+        width: 30%;
+
+    }
+
+    .homeSection4 .serviceDiv .servicePart1 {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width:610px) {
+    .homeSection4 .serviceDiv .servicePart2 {
+        display: none;
+
+    }
+
+    .homeSection4 .serviceDiv .servicePart1 {
+        position: relative;
+        width: 100%;
+        padding: 25px;
+        background: var(--background-color);
+        mask-image:none;
+        -webkit-mask-image: none;
+
+    }
+    .homeSection4 .mainHeading{
+        text-align: center;
+    }
+
+    .homeSection4 .animationDiv {
+
+        height: auto;
+    }
+
+    .homeSection4 .animationDiv .serviceDiv {
+        height: auto;
+    }
+
 
 }
 
@@ -516,6 +907,17 @@
 
     .homeSection2 {
         margin-top: 80px;
+
+    }
+
+    .homeSection3 .redirectDiv {
+        width: 90%;
+
+    }
+
+
+    .homeSection3 .redirectDiv .redirectPart1 {
+        width: 30%;
 
     }
 
