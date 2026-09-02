@@ -110,6 +110,55 @@
 .aboutMain .part2 .qouteText{
     font-weight: 200;
 }
+.part3{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.part3 .mainHeading{
+    margin-bottom: 20px;
+}
+.part3 .experienceCard{
+    border-radius: 20px;
+    width: 70%;
+    border: 1px solid var(--primary-color);
+}
+.part3 .experienceCard .experienceMain{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--primary-color-2);
+}
+.part3 .experienceCard .experienceMain .experienceTab{
+    padding: 15px;
+    cursor: pointer;
+    color: var(--light-grey);
+    font-weight: 700;
+}
+.part3 .experienceCard .experienceMain .active{
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+.part3 .experienceCard .experienceDetails{
+    padding: 40px;
+}
+.part3 .experienceCard .experienceDetails .detailsHead{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.part3 .experienceCard .experienceDetails .detailsHead .headIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.part3 .experienceCard .experienceDetails .detailsHead .headIcon svg{
+    padding: 20px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background: var(--primary-color-2);
+}
+
 
 @media (max-width:1260px) {
     .aboutMain .part1 .aboutMain1 .aboutbox {

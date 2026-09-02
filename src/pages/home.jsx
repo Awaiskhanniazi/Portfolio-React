@@ -203,6 +203,7 @@ function Home() {
                             <p>Deployment and hosting of production-ready web applications.</p>
                             <p>Git and GitHub for reliable version control and code management.</p>
                             <div className="redirectServices">
+                                <NavLink to="/services">
                                 <div className="redirectButton">
                                     <h6>
                                         <span className="purpleText">
@@ -214,6 +215,7 @@ function Home() {
                                         <CiLocationArrow1 />
                                     </div>
                                 </div>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="servicePart2">

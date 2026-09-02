@@ -462,6 +462,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 70px;
 }
 
 .homeSection4 .animationDiv {
@@ -562,6 +563,9 @@
 
 .homeSection4 .serviceDiv .servicePart1 .redirectServices {
     display: flex;
+}
+.homeSection4 .serviceDiv .servicePart1 .redirectServices a{
+    text-decoration: none;
 }
 
 .homeSection4 .serviceDiv .servicePart1 .redirectServices .redirectButton {

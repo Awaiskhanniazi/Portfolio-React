@@ -3,8 +3,52 @@ import aboutPic from "../assets/about.png"
 import { BiCricketBall } from "react-icons/bi";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { SiAirplayvideo } from "react-icons/si";
+import { useState } from "react";
+import { MdWorkspacePremium, MdLocationOn } from "react-icons/md";
+import { HiOutlineCalendarDateRange } from "react-icons/hi2";
+import { GoDotFill } from "react-icons/go";
+
+
 
 function About() {
+    const experiences = [
+        {
+            id: 1,
+            company: "Primora Technologies",
+            position: "Full Stack Developer",
+            data: "july 2026 - Present",
+            location: "Remote",
+            description: [
+                "Led a 3-member team developing a multi-tenant, multi-branch POS system.",
+                "Built features using React.js, Node.js, Express.js, Prisma, and MySQL.",
+                "Implemented JWT authentication with access and refresh tokens.",
+                "Implemented RBAC for Super Admin, Store Manager, Cashier, Inventory Manager, and Accountant.",
+                "Developed REST APIs for authentication, products, inventory, sales, and accounting.",
+                "Built Axios interceptors for token handling, refresh tokens, and API errors.",
+                "Used Git/GitHub for version control and team collaboration."
+
+            ]
+        },
+        {
+            id: 2,
+            company: "Primora ",
+            position: "Full Stack Web Developer",
+            data: "july 2026 - Present",
+            location: "Remote",
+            description: [
+                "Led a 3-member team developing a multi-tenant, multi-branch POS system.",
+                "Built features using React.js, Node.js, Express.js, Prisma, and MySQL.",
+                "Implemented JWT authentication with access and refresh tokens.",
+                "Implemented RBAC for Super Admin, Store Manager, Cashier, Inventory Manager, and Accountant.",
+                "Developed REST APIs for authentication, products, inventory, sales, and accounting.",
+                "Built Axios interceptors for token handling, refresh tokens, and API errors.",
+                "Used Git/GitHub for version control and team collaboration."
+
+            ]
+        }
+    ]
+    const [activeTab, setActiveTab] = useState(0);
+    const activeExperience = experiences[activeTab];
     return (
         <>
             <div className="aboutMain">
@@ -54,17 +98,63 @@ function About() {
                         <span className="purpleText">
                             {"< "}
                         </span>
-                        Code is not just about solving problems, it's about turning ideas into reality 
-                       <span className="purpleText">
+                        Code is not just about solving problems, it's about turning ideas into reality
+                        <span className="purpleText">
                             {" />"}
                         </span>
-                        
+
                     </h4>
                 </div>
                 <div className="part3">
-                    <div className="animationcard">
+                    <div className="mainHeading">
+                        <h1>Profectional <span className="purpleText">Experience</span></h1>
+                    </div>
+                    <div className="experienceCard">
                         <div className="experienceMain">
-                            
+                            {experiences.map((experience, index) => (
+                                <div key={experience.id}
+                                    className={`${activeTab === index ? "experienceTab active" : "experienceTab"}`}
+                                    onClick={() => { setActiveTab(index) }}
+                                >
+                                    {experience.company}
+                                </div>
+                            ))}
+
+                        </div>
+                        <div className="experienceDetails">
+                            <div className="detailsHead">
+                                <div className="headIcon">
+                                    <MdWorkspacePremium />
+                                </div>
+                                <div className="headText">
+                                    <h2>{activeExperience.position}</h2>
+                                    <p>{activeExperience.company}</p>
+                                    <div className="positionDetails">
+                                        <div className="location">
+                                            <span className="positionIcon">
+                                                <MdLocationOn />
+                                            </span>
+                                            <p>{activeExperience.location}</p>
+                                        </div>
+                                        <div className="date">
+                                            <span className="positionIcon">
+                                                <HiOutlineCalendarDateRange />
+                                            </span>
+                                            <p>{activeExperience.data}</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="positionDescription">
+                                {activeExperience.description.map((item, index) => (
+                                    <div className="experiencePoint" key={index}>
+                                        <span><GoDotFill/></span>
+                                        <p>{item}</p>
+                                    </div>
+                                ))}
+                            </div>
+
                         </div>
                     </div>
 
