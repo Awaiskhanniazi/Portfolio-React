@@ -503,10 +503,8 @@
 
 .homeSection4 .animationDiv::after {
     content: "";
-
     position: absolute;
     inset: 5px;
-
     background: var(--background-color);
     border-radius: 18px;
 }

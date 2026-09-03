@@ -194,14 +194,14 @@ function Home() {
                     <div className="serviceDiv">
                         <div className="servicePart1">
                             <h2><span className="purpleText">Full Stack Web Application</span></h2>
-                            <p>Modern and responsive frontend interfaces for all devices.</p>
-                            <p>Secure and scalable backend systems with efficient database management.</p>
-                            <p>REST API development and seamless third-party API integration.</p>
-                            <p>Custom admin panels for efficient content and user management.</p>
-                            <p>Secure media upload functionality for images, videos, and documents.</p>
-                            <p>Token-based authentication with role-based access control.</p>
-                            <p>Deployment and hosting of production-ready web applications.</p>
-                            <p>Git and GitHub for reliable version control and code management.</p>
+                            <p><span className="purpleText">• </span>Modern and responsive frontend interfaces for all devices.</p>
+                            <p><span className="purpleText">• </span>Secure and scalable backend systems with efficient database management.</p>
+                            <p><span className="purpleText">• </span>REST API development and seamless third-party API integration.</p>
+                            <p><span className="purpleText">• </span>Custom admin panels for efficient content and user management.</p>
+                            <p><span className="purpleText">• </span>Secure media upload functionality for images, videos, and documents.</p>
+                            <p><span className="purpleText">• </span>Token-based authentication with role-based access control.</p>
+                            <p><span className="purpleText">• </span>Deployment and hosting of production-ready web applications.</p>
+                            <p><span className="purpleText">• </span>Git and GitHub for reliable version control and code management.</p>
                             <div className="redirectServices">
                                 <NavLink to="/services">
                                 <div className="redirectButton">
