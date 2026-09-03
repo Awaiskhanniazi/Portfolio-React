@@ -217,7 +217,6 @@
 }
 
 .part3 .experienceCard .experienceDetails .detailsHead .headIcon {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -270,6 +269,7 @@
     flex-direction: column;
     align-items: center;
 
+    margin-bottom: 100px;
 }
 
 .part4 .mainHeading {
@@ -543,6 +543,16 @@
 
     }
 
+    .part3 .experienceCard .experienceMain .experienceTab {
+        padding: 13px;
+        font-size: small;
+        font-weight: 500;
+    }
+
+    .part3 .experienceCard .experienceDetails {
+        padding: 20px;
+    }
+
     .part3 p {
         font-size: small;
     }
@@ -573,6 +583,7 @@
     .part4 .equcationCard .detailsPart .headingPart .degreeTime p {
         font-size: x-small;
     }
+
 
 
 }
